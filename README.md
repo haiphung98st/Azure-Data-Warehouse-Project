@@ -1,55 +1,35 @@
-# README Template
+# Building an Azure Data Warehouse for Bike Share Data Analytics
 
-Below is a template provided for use when building your README file for students.
+### **The business outcomes you are designing for are as follows:**
+1. Analyze how much time is spend per ride
+    * Based on date and time factors such as day of week and time of day
+    * Based on which station is the startin and / or ending station
+    * Based on age of the rider at time of the ride
+    * Based on whether the rider is a memeber or a casual rider
+2. Analyze how much money is spent
+    * By month, quarter, year
+    * By member, based on the age of the rider at account start
+3. EXTRA CREDIT - Analyze how much money is spent per member
+    * Based on how many rides the rider averages per month
+    * Based on how many minutes the rider spends on a bike per month
 
-# Project Title
+### **Task 1:** Create your Azure resources
 
-Project description goes here.
+![image](https://github.com/user-attachments/assets/af58dbdb-3f83-41ff-80f0-907b17aaf089)
 
-## Getting Started
+### **Task 2:** Design a star schema
 
-Instructions for how to get a copy of the project running on your local machine.
+![star_schema](https://github.com/user-attachments/assets/1a0471b0-74b8-44da-a51a-2588f7791979)
 
-### Dependencies
+### **Task 3:** Create the data in PostgresSQL
 
-```
-Examples here
-```
+![image](https://github.com/user-attachments/assets/caccd2a8-4881-4d8f-a7ff-90cd72962afd)
 
-### Installation
+### **Task 4:** EXTRACT the data from PostgresSQL
 
-Step by step explanation of how to get a dev environment running.
+![proof_of_extract](https://github.com/user-attachments/assets/7941db8e-5a00-4acf-bdde-02e62061135f)
+![migrate_data](https://github.com/user-attachments/assets/054f8552-7816-4e67-ad05-50d1a3dd7ec0)
 
-List out the steps
-
-```
-Give an example here
-```
-
-## Testing
-
-Explain the steps needed to run any automated tests
-
-### Break Down Tests
-
-Explain what each test does and why
-
-```
-Examples here
-```
-
-## Project Instructions
-
-This section should contain all the student deliverables for this project.
-
-## Built With
-
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
-
-## License
-
-[License](LICENSE.txt)
+### **Task 5:** LOAD the data into external tables in the data warehouse
+### **Task 6:** TRANSFORM the dat to the star schema using CETAS
+![successfull_tables](https://github.com/user-attachments/assets/29581412-7af6-4b0f-935e-351f65274817)
